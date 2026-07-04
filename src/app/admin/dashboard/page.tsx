@@ -24,7 +24,7 @@ export default async function AdminDashboard() {
     }
   });
 
-  const pendingOrdersCount = orders.filter(o => o.status === 'PENDING').length;
+  const pendingOrdersCount = orders.filter((o: any) => o.status === 'PENDING').length;
 
   // 1. Calculate Daily Revenue for the last 7 days
   const last7Days = Array.from({ length: 7 }, (_, i) => {
