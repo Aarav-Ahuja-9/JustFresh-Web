@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { submitReview } from "./actions";
-import { toast } from "sonner";
+import { toast } from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function WriteReviewButton({ productId, productName, delivered }: { productId: string, productName: string, delivered: boolean }) {
