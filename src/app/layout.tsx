@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 import { CartProvider } from "@/lib/CartContext";
 import CartDrawer from "@/components/CartDrawer";
+import { Toaster } from "react-hot-toast";
 
 export default function RootLayout({
   children,
@@ -33,6 +34,7 @@ export default function RootLayout({
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
+        <Toaster position="top-center" />
         <CartProvider>
           {children}
           <CartDrawer />
