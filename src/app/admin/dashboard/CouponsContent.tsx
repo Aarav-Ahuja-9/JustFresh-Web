@@ -46,7 +46,7 @@ export default async function CouponsContent() {
           {coupons.length === 0 ? (
             <div className="p-12 text-center text-gray-500 font-medium">No coupons created yet.</div>
           ) : (
-            coupons.map((coupon) => (
+            coupons.map((coupon: any) => (
               <div key={coupon.id} className="p-6 flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:bg-slate-50 transition-colors">
                 <div>
                   <div className="flex items-center gap-3 mb-1">
