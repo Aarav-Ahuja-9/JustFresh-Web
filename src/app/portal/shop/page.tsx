@@ -6,6 +6,8 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import ShopFilters from "./ShopFilters";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Shop(props: { searchParams?: Promise<{ [key: string]: string | string[] | undefined }> }) {
   const session = await auth.api.getSession({
     headers: await headers()

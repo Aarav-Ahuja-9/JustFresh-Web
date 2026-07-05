@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { db } from "@/lib/db";
 import { addProduct, deleteProduct, updateProductInventory, adminLogout, updateOrderStatus, deleteOrderPermanently, deleteAllProducts, deleteAllOrders, deleteAllUsers } from "../actions";
 import Image from "next/image";

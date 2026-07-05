@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 export default function ClientProfile() {
   return (
     <div className="p-8 bg-gray-50 min-h-screen">
