@@ -15,7 +15,7 @@ export function generateInvoice(order: any) {
   
   doc.setFontSize(10);
   doc.setTextColor(100, 116, 139); // Slate 500
-  doc.text('Farm to Business Delivery', 14, 26);
+  doc.text('Mandi to Store', 14, 26);
   doc.text('Mumbai, Maharashtra', 14, 31);
   doc.text('Email: support@justfreshagro.com', 14, 36);
 
