@@ -95,6 +95,7 @@ export default async function LandingPage() {
                 alt="Fresh wholesale produce" 
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className={styles.heroImg}
               />
             </div>
@@ -170,7 +171,7 @@ export default async function LandingPage() {
             { title: "High-Volume Staples", img: "https://images.unsplash.com/photo-1587334206506-e17698f5a05e?auto=format&fit=crop&q=80&w=400" }
           ].map((cat, i) => (
             <div key={i} className={styles.categoryCard}>
-              <Image src={cat.img} alt={cat.title} fill className={styles.heroImg} />
+              <Image src={cat.img} alt={cat.title} fill sizes="(max-width: 768px) 50vw, 25vw" className={styles.heroImg} />
               <div className={styles.categoryOverlay}>
                 <h3>{cat.title}</h3>
               </div>
@@ -192,7 +193,7 @@ export default async function LandingPage() {
         </div>
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
           <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
-            <Image src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c8e?auto=format&fit=crop&q=80&w=800" alt="Farmer in a field" fill className="object-cover" />
+            <Image src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c8e?auto=format&fit=crop&q=80&w=800" alt="Farmer in a field" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4">Sourced with Care</h3>

@@ -38,7 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
       <div className="relative h-48 w-full bg-slate-100">
-        <Image src={product.imageUrl || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400"} alt={product.name} fill className="object-cover" />
+        <Image src={product.imageUrl || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400"} alt={product.name} fill sizes="(max-width: 768px) 100vw, 300px" className="object-cover" />
       </div>
       <div className="p-4 flex-grow flex flex-col">
         <h3 className="font-bold text-slate-800 text-lg mb-1">{product.name}</h3>

@@ -51,7 +51,7 @@ export default function CartDrawer() {
                 items.map((item) => (
                   <div key={item.id} className="flex gap-4 border-b border-gray-100 pb-4">
                     <div className="relative w-20 h-20 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
-                      <Image src={item.imageUrl || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400"} alt={item.name} fill className="object-cover" />
+                      <Image src={item.imageUrl || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400"} alt={item.name} fill sizes="64px" className="object-cover" />
                     </div>
                     <div className="flex-1 flex flex-col justify-between">
                       <div>

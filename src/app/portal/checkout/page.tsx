@@ -499,6 +499,7 @@ export default function Checkout() {
                         src={item.imageUrl || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400"} 
                         alt={item.name} 
                         fill 
+                        sizes="64px"
                         className="object-cover group-hover:scale-110 transition-transform duration-500" 
                       />
                     </div>
